@@ -1,0 +1,262 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: capitalize;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: none;
+  outline: none;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+  text-decoration: none;
+  padding: 0%;
+  margin: 0%;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 100%;
+}
+
+section {
+  padding: 1rem 8%;
+}
+
+.btn {
+  background: #5654b3;
+  color: #fff;
+  padding: .7rem 1rem;
+  border-radius: .5rem;
+}
+
+.btn:hover {
+  background: #fa676d;
+}
+
+.header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #e3f0ff;
+  overflow-x: hidden;
+}
+
+.header .logo {
+  color: #2d2c62;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.header .menu {
+  margin-left: 10rem;
+}
+
+.header .menu a {
+  margin-left: 2rem;
+  color: #2d2c62;
+  font-size: 1.2rem;
+  font-weight: 500;
+  -webkit-transition: all .4s linear;
+  transition: all .4s linear;
+}
+
+.header .menu a:hover {
+  color: #fa676d;
+}
+
+.header .loginm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .loginm #menu-btn {
+  margin-right: 1rem;
+}
+
+.header .loginm .login {
+  color: #2d2c62;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-right: 1rem;
+}
+
+.header .loginm .login:hover {
+  color: #fa676d;
+}
+
+#menu-btn {
+  font-size: 1.5rem;
+  color: #2d2c62;
+  cursor: pointer;
+  display: none;
+}
+
+#menu-btn:hover {
+  color: #fa676d;
+}
+
+.home {
+  background: #e3f0ff;
+  max-height: 100vh;
+  overflow-x: hidden;
+}
+
+.home .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 3rem;
+}
+
+.home .row .col {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1;
+          flex: 1 1;
+}
+
+.home .row .col img {
+  height: 40rem;
+}
+
+.home .row .col h1 {
+  font-size: 3rem;
+  color: #2d2c62;
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+
+.home .row .col h1 span {
+  color: #fa676d;
+}
+
+.home .row .col p {
+  margin-bottom: 2rem;
+  font-size: .8rem;
+  line-height: 1.5rem;
+  color: #2d2c62;
+}
+
+.home .row .col .search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.home .row .col .search input {
+  background: #ffffff;
+  color: #fff;
+  padding: .73rem 1rem;
+  margin-right: -1rem;
+  width: 18rem;
+}
+
+.home .row .col .search .btn {
+  border-radius: 0;
+}
+
+.home .icons .fab {
+  margin-left: .5rem;
+  background: #5654b3;
+  color: #fff;
+  padding: .5rem;
+  border-radius: .3rem;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 1400px) {
+  html {
+    font-size: 90%;
+  }
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 70%;
+  }
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 60%;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+  .menu {
+    position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: #e3f0ff;
+    left: -10rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    top: 5rem;
+    width: 100%;
+    height: 100%;
+    border-top: 0.2rem solid #2d2c62;
+    padding: 5rem 0;
+    text-align: center;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  .menu.active {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+  .menu a {
+    margin-bottom: 2rem;
+    font-size: 2rem !important;
+  }
+  #menu-btn {
+    display: block;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+  .row {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 5rem 0;
+  }
+  .row .search {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+/*# sourceMappingURL=style.css.map */
